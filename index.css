@@ -1,0 +1,108 @@
+/* Define the afterglow effect */
+.afterglow {
+    animation: glow 0.5s ease-in-out forwards;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #F94F6D, 0 0 10px #F94F6D, 0 0 15px #F94F6D, 0 0 20px #F94F6D;
+    }
+    100% {
+        box-shadow: 0 0 0px #F94F6D;
+    }
+}
+
+
+@font-face {
+    font-family: 'Cursed Timer ULiL';
+    src: url('arcade-font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    background-color: #1B244A;
+    color: #EEEEEE;
+}
+
+h3 {
+       font-family: 'Verdana', sans-serif;
+       font-size: 40px;
+       font-weight: 700;
+       margin: 0px;
+       margin-top: 68px;
+       margin-bottom: 21px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.score {
+   font-family: 'Cursed Timer ULiL', sans-serif;
+   font-size: 90px;
+   background-color: black;
+   color: #F94F6D;
+   margin: 0px;
+   margin-bottom: 26px;
+   border-radius: 5px;
+   padding: 0px 19px;
+   width: 155px;
+   height: 120px;
+   line-height: 120px; /* Match the height to vertically center the text */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.score-buttons {
+    display: flex;
+    justify-content: space-between; 
+}
+
+button {
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    color: #9AABD8;
+    background: none;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+}
+
+.new-game-container button {
+    background-color: none;
+    color: #9AABD8;
+    width: auto;
+    border-radius: 10px;
+    border: 2px solid #FFD700; /* Yellow-ish color */
+    padding: 10px 20px;
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px;
+    position: fixed; /* Keeps the button fixed in place */
+    top: 360px; /* Position the button 320px from the top of the page */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for the button's width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+
+}
+
+.new-game-container button:hover {
+    color: #1B244A;
+    background-color: rgba(255, 199, 0, 0.8); /* Smooth background color change */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Smooth box-shadow change */
+    
+}
+
+
+
+
+
+
+
